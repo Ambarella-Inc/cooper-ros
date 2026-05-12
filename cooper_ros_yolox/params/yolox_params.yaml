@@ -1,0 +1,7 @@
+cooper_ros:
+  yolox:
+    ros__parameters:
+      conf_threshold: 0.45
+      nms_threshold: 0.3
+      max_det_num: 300
+      class_agnostic: true

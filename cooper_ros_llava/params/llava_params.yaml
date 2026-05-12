@@ -1,0 +1,16 @@
+cooper_ros:
+  llava:
+    ros__parameters:
+      disable_dsp: true
+
+      # Prompt configuration
+      default_prompt: "Describe the scene with as many detail as possible. If there are vehicles, bikes or people, count them and give more details on them."
+
+      # Processing parameters configuration
+      batch_size: 64
+      max_image_frames: 8      # Maximum number of image frames
+      max_video_frames: 32     # Maximum number of video frames
+      max_record_frames: 960   # Maximum number of recording frames (32*30)
+
+      # ROS node specific configuration
+      enable_performance_monitor: true

@@ -1,0 +1,4 @@
+cooper_ros:
+  iav_osd:
+    ros__parameters:
+      overlay_buffer_offset: 0

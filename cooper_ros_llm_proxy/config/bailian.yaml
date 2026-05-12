@@ -1,0 +1,9 @@
+cooper_ros:
+  llm_proxy_service:
+    ros__parameters:
+      base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+      model: "qwen3.5-flash"  # Model name
+
+      # Request configuration
+      max_retries: 3
+      timeout: 30.0
