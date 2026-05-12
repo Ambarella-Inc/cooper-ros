@@ -1,0 +1,34 @@
+models:
+  - repo_id: "Ambarella/LongCLIP"
+    revision: "d659e5728a75fed52edc6b48c519c1d904749efb"
+    files:
+      image_encoder_cv72: "cv72_longclip_base_patch16_image_encoder.bin"
+      text_encoder_cv72: "cv72_longclip_base_patch16_text_encoder.bin"
+      image_encoder_n1-655: "n1-655_longclip_base_patch16_image_encoder.bin"
+      text_encoder_n1-655: "n1-655_longclip_base_patch16_text_encoder.bin"
+      text_embedding: "longclip_base_patch16_token_embedding_weight.bin"
+      tokenizer: "tokenizer.json"
+  - repo_id: "Ambarella/LLaVA-OneVision"
+    revision: "48eeeffc819ccaf7c5ba6e38e3e1adef9e4c988b"
+    files:
+      model_n1-655: "n1-655_llava_onevision_7B_1NVP.tar"
+  - repo_id: "Ambarella/ResNet"
+    revision: "ed11e10dde0ede62d32eee1f06a802b5a3e8dd24"
+    files:
+      model_cv72: "cv72_resnet_v1.5_50.bin"
+      model_n1-655: "n1-655_resnet_v1.5_50.bin"
+  - repo_id: "Ambarella/RetinaFace"
+    revision: "4754bc0494c160672df140f8ba0b2a729bd0e00e"
+    files:
+      model_cv72: "cv72_retinaface_resnet50.bin"
+      model_n1-655: "n1-655_retinaface_resnet50.bin"
+  - repo_id: "Ambarella/TopFormer"
+    revision: "259dea320024537fd68a1787c3647060276cf67c"
+    files:
+      model_cv72: "cv72_topformer_base.bin"
+      model_n1-655: "n1-655_topformer_base.bin"
+  - repo_id: "Ambarella/YOLOX"
+    revision: "12cf91b5d97c0636e653dc0ff49fd92e6ea985b4"
+    files:
+      model_cv72: "cv72_yolox_s.bin"
+      model_n1-655: "n1-655_yolox_s.bin"

@@ -1,0 +1,16 @@
+cooper_ros:
+  clip:
+    ros__parameters:
+      # Search parameters
+      max_results: 10
+
+      # Performance monitoring
+      enable_performance_monitor: true
+
+      # Model parameters
+      top_k: 5
+      batch_num: 1
+
+      # File processing
+      supported_image_formats: [".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".tif"]
+      max_text_length: 256
