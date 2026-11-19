@@ -10,7 +10,7 @@ Below are the three main search modes:
 
 ## Run
 
-1. Launch the CLIP model in terminal A.
+1. Launch the CLIP model in Terminal A.
 
     ```bash
     # Lychee OS
@@ -23,7 +23,7 @@ Below are the three main search modes:
 
     CLIP_PARAMS_DIR=`ros2 pkg prefix cooper_ros_clip`/share/cooper_ros_clip/params
     CLIP_IMAGE_ENCODER_PATH=<the path of image encoder model> # For example, <Cooper Model Garden>/LongCLIP/n1-655_longclip_base_patch16_image_encoder.bin
-    CLIP_TEXT_ENCODER_PATH=<the path of image encoder model> # For example, <Cooper Model Garden>/LongCLIP/n1-655_longclip_base_patch16_text_encoder.bin
+    CLIP_TEXT_ENCODER_PATH=<the path of text encoder model> # For example, <Cooper Model Garden>/LongCLIP/n1-655_longclip_base_patch16_text_encoder.bin
     CLIP_TEXT_EMBEDDING_PATH=<the path of the text embedding binary file> # For example, <Cooper Model Garden>/LongCLIP/longclip_vitb16_token_embedding_weight.bin
     CLIP_VOCAB_PATH=<the path of the tokenizers file> # For example, <Cooper Model Garden>/LongCLIP/tokenizer.json
 
@@ -31,7 +31,7 @@ Below are the three main search modes:
     ros2 launch cooper_ros_clip clip.launch.py params_file:=$CLIP_PARAMS_DIR/clip_params.yaml image_encoder_path:=$CLIP_IMAGE_ENCODER_PATH text_encoder_path:=$CLIP_TEXT_ENCODER_PATH text_embedding_path:=$CLIP_TEXT_EMBEDDING_PATH vocab_path:=$CLIP_VOCAB_PATH
     ```
 
-2. Run the CLIP terminal user interface (UI) in terminal B.
+2. Run the CLIP terminal user interface (UI) in Terminal B.
 
     ```bash
     # Lychee OS
@@ -72,7 +72,7 @@ Below are the three main search modes:
     <image file>: /home/lychee/model/dra_img/output_0001_000001.jpg
     ```
 
-3. View the performance in terminal C.
+3. View the performance in Terminal C.
 
     ```bash
     export ROS_DOMAIN_ID=1
@@ -102,7 +102,7 @@ Below are the three main search modes:
 
         | Name | Type | Description |
         | ---- | ---- | ----------- |
-        | clip/performance | std_msgs::msg::String | Performance data in JSON format {"cvflow_us":xxx,"image_delay_us":xxx,"inference_us":xxx,"post_process_us":xxx,"preprocess_us":xxx} |
+        | clip/performance | std_msgs::msg::String | Performance data in JSON format {"cvflow_us":xxx,"image_delay_us":xxx,"inference_us":xxx,"model":xxx,"operation":xxx,"post_process_us":xxx,"preprocess_us":xxx} |
 
 - Subscribing topics
     - Request

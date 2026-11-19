@@ -33,7 +33,9 @@ setup(
     maintainer_email='cooper_robot@ambarella.com',
     description='Cooper ROS CLIP Terminal',
     license='Apache-2.0',
-    tests_require=['pytest'],
+    extras_require={
+        'test': ['pytest'],
+    },
     entry_points={
         'console_scripts': [
             'clip_terminal = cooper_ros_clip_terminal.clip_terminal_node:main',

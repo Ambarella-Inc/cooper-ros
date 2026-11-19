@@ -17,7 +17,9 @@ setup(
     maintainer_email='cooper_robot@ambarella.com',
     description='Cooper ROS CV File module for file mode CV tasks',
     license='Apache-2.0',
-    tests_require=['pytest'],
+    extras_require={
+        'test': ['pytest'],
+    },
     entry_points={
         'console_scripts': [
             'cv_file = cooper_ros_cv_file.cv_file:main',

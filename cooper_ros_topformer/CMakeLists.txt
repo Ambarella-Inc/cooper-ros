@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.10)
 project(cooper_ros_topformer)
 
 # Set policy CMP0148 to suppress warnings about FindPythonInterp

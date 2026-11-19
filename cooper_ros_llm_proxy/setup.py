@@ -19,7 +19,9 @@ setup(
     maintainer_email='cooper_robot@ambarella.com',
     description='ROS 2 package for LLM services integration using topic communication',
     license='Apache-2.0',
-    tests_require=['pytest'],
+    extras_require={
+        'test': ['pytest'],
+    },
     entry_points={
         'console_scripts': [
             'llm_proxy_service = cooper_ros_llm_proxy.llm_proxy_service:main',
